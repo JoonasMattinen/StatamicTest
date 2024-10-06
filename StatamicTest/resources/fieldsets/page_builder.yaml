@@ -1,0 +1,26 @@
+title: 'Page Builder'
+fields:
+  -
+    handle: replicator_field
+    field:
+      type: replicator
+      display: Replicator
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            text_block:
+              display: 'Text Block'
+              fields:
+                -
+                  handle: title
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Title
+                -
+                  handle: content
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Content

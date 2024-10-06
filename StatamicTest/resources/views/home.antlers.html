@@ -1,3 +1,25 @@
+{{ replicator_field }}
+    {{ if type == "text_block" }}
+        <div class="text-block">
+            <h2>{{ title }}</h2>
+            <p>{{ content }}</p>
+        </div>
+    {{ /if }}
+
+    {{ if type == "image_block" }}
+        <div class="image-block">
+            <img src="{{ image | glide }}" alt="{{ alt_text }}">
+        </div>
+    {{ /if }}
+
+    {{ if type == "video_block" }}
+        <div class="video-block">
+            <iframe src="{{ video_url }}"></iframe>
+        </div>
+    {{ /if }}
+
+    <!-- Add more block types as needed -->
+{{ /replicator_field }}
 <h1 class="text-2xl font-bold my-6">Welcome to my CyberSpace Place!</h1>
 {{ content }}
 {{ partial:blog/listing limit="5" }}
