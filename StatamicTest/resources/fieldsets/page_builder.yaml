@@ -1,10 +1,10 @@
 title: 'Page Builder'
 fields:
   -
-    handle: replicator_field
+    handle: page_builder
     field:
       type: replicator
-      display: Replicator
+      display: 'Page Builder'
       sets:
         new_set_group:
           display: 'New Set Group'
